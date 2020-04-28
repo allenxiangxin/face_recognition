@@ -45,13 +45,12 @@ while True:
 
         print('Match Found: %s' % name)
 
-        top_left = (face_location[3], face_location[0])
-        bottom_right = (face_location[1], face_location[2])
-
         color=[0, 255, 0]
         if name=='unknown':
             color = [0, 0, 255]
 
+        top_left = (face_location[3], face_location[0])
+        bottom_right = (face_location[1], face_location[2])
         cv2.rectangle(image, top_left, bottom_right, color, frame_thickness)
 
         top_left = (face_location[3], face_location[2])
