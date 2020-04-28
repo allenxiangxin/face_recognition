@@ -2,11 +2,11 @@
 Simple face recognition for fun, using face_recognition package.
 
 # Setup
-
 ```
 pip install face_recognition
 pip install opencv-python
 ```
+Also need `numpy`, `os`.
 
 # Usage
 
